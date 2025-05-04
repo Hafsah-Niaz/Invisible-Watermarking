@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InvisiData</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>InvisiData – Smart Watermarking</h1>
+
+    <form action="/add_watermark" method="post" enctype="multipart/form-data">
+      <h3>Add Watermark (PDF / DOCX)</h3>
+      <input type="file" name="file" accept=".pdf,.docx" required><br>
+      <input type="text" name="text" placeholder="Enter watermark" required>
+      <button type="submit">Add Watermark</button>
+    </form>
+
+    <form action="/trace" method="post" enctype="multipart/form-data">
+      <h3>Trace Watermark (PDF / DOCX)</h3>
+      <input type="file" name="file" accept=".pdf,.docx" required>
+      <button type="submit">Trace</button>
+    </form>
+  </div>
+</body>
+</html>
