@@ -16,20 +16,6 @@ This is a simple web application that allows you to:
 2. Later, trace back the watermark to check ownership or source.
 3. Watermark is stored securely in the **PDF metadata** (invisible to normal viewers).
 
----
-
-## 📂 Project Structure
-├── app.py # Flask application
-├── watermark.py # Core logic for watermarking
-├── templates/
-│ ├── index.html # Upload page
-│ └── result.html # Result display page
-├── static/
-│ ├── style.css # Custom CSS styling
-├── uploads/ # Folder to store uploaded PDFs
-├── processed/ # Folder to store processed PDFs
-├── requirements.txt # Python dependencies
-└── README.md # (This file)
 
 ---
 
